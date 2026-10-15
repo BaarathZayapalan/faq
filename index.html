@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs Accordion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="purple-header">
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path d="M-100 170 C180 220 350 -50 500 -80" />
+      <path d="M300 -80 C180 100 280 240 470 270" />
+      <path d="M720 -100 C590 30 540 130 580 240" />
+      <path d="M1450 -100 C1300 150 1050 260 850 290" />
+    </svg>
+  </div>
+
+  <main class="faq-card">
+    <header class="heading">
+      <svg class="star" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M20 0 C23 12 28 17 40 20 C28 23 23 28 20 40 C17 28 12 23 0 20 C12 17 17 12 20 0Z"/>
+      </svg>
+      <h1>FAQs</h1>
+    </header>
+
+    <div class="faq-list">
+      <section class="faq-item open">
+        <button class="question" aria-expanded="true">
+          <span>What is Frontend Mentor, and how will it help me?</span>
+          <span class="icon">−</span>
+        </button>
+        <div class="answer">
+          Frontend Mentor offers realistic coding challenges to help
+          developers improve their frontend coding skills with projects
+          in HTML, CSS, and JavaScript. It's suitable for all levels
+          and ideal for portfolio building.
+        </div>
+      </section>
+
+      <section class="faq-item">
+        <button class="question" aria-expanded="false">
+          <span>Is Frontend Mentor free?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="answer" hidden>
+          Frontend Mentor offers free coding challenges to help you
+          practice your frontend development skills. Some additional
+          challenges and features require a paid plan.
+        </div>
+      </section>
+
+      <section class="faq-item">
+        <button class="question" aria-expanded="false">
+          <span>Can I use Frontend Mentor projects in my portfolio?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="answer" hidden>
+          Yes! You can showcase your completed projects in your portfolio
+          to demonstrate your coding skills to potential employers.
+        </div>
+      </section>
+
+      <section class="faq-item">
+        <button class="question" aria-expanded="false">
+          <span>How can I get help if I'm stuck on a challenge?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="answer" hidden>
+          You can ask the community for help, discuss your approach with
+          other developers, and explore community solutions.
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
